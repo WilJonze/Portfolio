@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/bb8d359ded.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+</head>
+<body>
+
+    <div id="myNav" class="navbar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul class="nav-content">
+            <li class="home"><a href="#">Home<i class="fa-sharp fa-solid fa-home"></i></a></li>
+            <li class="about"><a href="#">About<i class="fa-sharp fa-solid fa-user"></i></a></li>
+            <li class="project"><a href="#">Projects<i class="fa-sharp fa-solid fa-diagram-project"></i></a></li>
+        </ul>
+    </div>
+
+    <span onclick="openNav()"><i class="fa-sharp fa-solid fa-bars" id="menu"></i></span>
+
+    
+    <div class="mainbody">
+        
+        <a>
+            <img src="/img/williamhead.jpeg" class="photo" alt="A picture of William">
+            <img src="/img/williamhardstyle.jpeg" class="photohover" alt="William with a Frog">
+        </a>
+       
+        <div class="info">
+            <h1> William Berry </h1>
+    
+            <p>Up and coming Web Developer. Rider of the Mark. The best hire you'll ever make.</p>
+
+            <button id="myButton" class="aboutbutton">More About Me</button>
+        
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3 class="infoheader">About Me</h3>
+                    <ul class="listinfo">
+                        <li>Name: William Berry</li>
+                        <li>Location: Louisville, Ky</li>
+                        <li>Phone: 502-724-0232</li>
+                        <li>Email: wberry264@gmail.com</li>
+                    </ul>
+                    <div class="buttoncontainer">
+                        <button class="resumebutton">Download Resume</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>  
+       
+    </div>
+</body>
+</html>
+
+<script src="/js/javascript.js"></script>

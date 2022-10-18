@@ -1,0 +1,248 @@
+
+
+html {
+  background-image: url(/img/blurry-gradient-home1.png);
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.navbar{
+  display: flex;
+  justify-content: flex-end;
+  height: 100%; 
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba (0,0,0,0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.nav-content{
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.navbar a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.navbar a:hover, .navbar a:focus {
+  color: #f1f1f1;
+}
+
+.navbar .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+#menu {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 15px;
+  margin: 15px;
+
+  
+}
+
+#menu:hover {
+  color:#985e6d;
+}
+
+.mainbody{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.photo {
+  width: 500px;
+  height: auto;
+  border-radius: 25%;
+  border: 2px solid #192231;
+  transition: 
+
+}
+
+.photohover {
+  width: 500px;
+  height: auto;
+  border-radius: 25%;
+  border: 2px solid #192231;
+
+}
+
+
+a img:last-child {
+  display: none;
+  transition: 2s;
+}
+
+a:hover img:last-child{
+  display: block;
+  transition-delay: 2s;
+  
+}
+
+a:hover img:first-child{
+  display: none;
+  transition: 2s;
+  
+}
+
+
+.info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.aboutbutton{
+  padding: 0.3em 1.2em
+  margin: 0 0.1em 0.1em 0;
+  border: 0.16em solid rgba(255,255,255, 0);
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300px;
+  width: 150px;
+  height: 40px;
+  color: #989898;
+  background-color: #192231;
+  transition: .3s;
+}
+
+.aboutbutton:hover {
+  background-color: #985e6d;
+  color:#192231;
+}
+
+
+
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+
+}
+
+.modal-content{
+  background-color: #985e6d;
+  color: #192231;
+  margin: 15% auto;
+  padding: 20px;
+  padding: 20px;
+  border: 1px solid #192231;
+  width: 80%;
+  border-radius: 15px;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+.close{
+  color: #192231;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.close:hover,
+.close:focus {
+  color: #98878f;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.infoheader{
+  text-align: center;
+  font-size: 30px;;
+}
+
+.listinfo{
+  columns: 2;
+  list-style-type: none;
+  column-gap: 40px;
+  column-rule: 2px solid #192231;
+  padding: 20px;
+  font-size: 20px;
+  margin: 50px;
+}
+
+.buttoncontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  color: #98878f;
+
+}
+
+.resumebutton{
+  padding: 0.3em 1.2em
+  margin: 0 0.1em 0.1em 0;
+  border: 0.16em solid rgba(255,255,255, 0);
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300px;
+  width: 200px;
+  height: 40px;
+  color: #989898;
+  background-color: #192231;
+  transition: .3s;
+}
+
+.resumebutton:hover{
+  background-color: #98878f;
+  color:#192231;
+}
+
+
+/* Keyframes */
+
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+
+
+
+/* Media and @Media */
+
+@media screen and (max-height: 450px) {
+.navbar a {font-size: 20px}
+.navbar .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
