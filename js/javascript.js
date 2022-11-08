@@ -23,13 +23,20 @@ window.onclick = function(event) {
 
 /* Menu Transition */
 
+const myNav = document.getElementById("myNav"); 
+const openNavButton = document.querySelector("#menu");
+const closeNavButton = document.querySelector('.closebtn');
+
 function openNav() {
-    document.getElementById("myNav").style.width = "100%" ;
+    myNav.classList.add("active");
 }
 
 function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
+    myNav.classList.remove("active");
 }
+
+openNavButton.addEventListener("click", openNav);
+closeNavButton.addEventListener("click", closeNav);
 
 /* Modal Button */
 

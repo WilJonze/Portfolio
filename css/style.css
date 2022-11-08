@@ -1,26 +1,40 @@
 
 
 html {
-  background-image: url(/img/blurry-gradient-home1.png);
+  /*background-image: url(/img/blurry-gradient-home1.png);*/
   min-height: 100%;
+  font-family: 'Rubik', sans-serif;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  overflow: hidden;
 }
+
+body {
+  background: linear-gradient(-45deg, #4f526d, #877b87, #746d7e, #545670);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite alternate;
+}
+
+
 
 .navbar{
   display: flex;
   justify-content: flex-end;
-  height: 100%; 
+  height: 100vh; 
   width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(0,0,0);
+  background-color: #192231;
   background-color: rgba (0,0,0,0.9);
-  overflow-x: hidden;
+  overflow: hidden;
   transition: 0.5s;
+}
+
+.navbar.active {
+  width: 100vw;
 }
 
 .nav-content{
@@ -29,6 +43,8 @@ html {
   width: 100%;
   text-align: center;
   margin-top: 30px;
+  list-style-type: none;
+  overflow: hidden;
 }
 
 .navbar a {
@@ -38,10 +54,24 @@ html {
   color: #818181;
   display: block;
   transition: 0.3s;
+  padding: 25px;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.nav-button {
+  all: unset;
+}
+
+i {
+  margin-right: 25px;
+  text-decoration: none;
+  overflow: hidden;
 }
 
 .navbar a:hover, .navbar a:focus {
-  color: #f1f1f1;
+  color: #985e6d;
+ 
 }
 
 .navbar .closebtn {
@@ -51,12 +81,23 @@ html {
   font-size: 60px;
 }
 
+.closebtn {
+  all: unset;
+  color:#818181;
+}
+
+.closebtn:hover {
+  
+  color: #985e6d;
+}
+
 #menu {
   display: inline-flex;
   justify-content: flex-end;
   align-items: flex-end;
   padding: 15px;
   margin: 15px;
+  font-size: 36px;
 
   
 }
@@ -66,10 +107,9 @@ html {
 }
 
 .mainbody{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 
 }
 
@@ -82,41 +122,21 @@ html {
 
 }
 
-.photohover {
-  width: 500px;
-  height: auto;
-  border-radius: 25%;
-  border: 2px solid #192231;
-
+.photo-position{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-
-a img:last-child {
-  display: none;
-  transition: 2s;
-}
-
-a:hover img:last-child{
-  display: block;
-  transition-delay: 2s;
-  
-}
-
-a:hover img:first-child{
-  display: none;
-  transition: 2s;
-  
-}
-
 
 .info{
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  margin: 20px;
 }
 
-.aboutbutton{
+.trigger{
   padding: 0.3em 1.2em
   margin: 0 0.1em 0.1em 0;
   border: 0.16em solid rgba(255,255,255, 0);
@@ -132,7 +152,7 @@ a:hover img:first-child{
   transition: .3s;
 }
 
-.aboutbutton:hover {
+.trigger:hover {
   background-color: #985e6d;
   color:#192231;
 }
@@ -159,7 +179,7 @@ a:hover img:first-child{
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 1em 1.5rem;
-  width: 24rem;
+  width: 50rem;
   border-radius: 0.5rem;
   background-color: #985e6d;
   color: #192231;
@@ -172,12 +192,14 @@ a:hover img:first-child{
   line-height: 1.5rem;
   text-align: center;
   cursor: pointer;
-  border-radius: 025rem;
-  background-color: lightgray;
+  font-size: 30px;
+  transition: 0.3s;
 }
 
 .close:hover{
   background-color: #985e6d;
+  color:#98878f;
+
 }
 
 .infoheader{
@@ -239,6 +261,18 @@ a:hover img:first-child{
   to {top: 0; opacity: 1}
 }
 
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+
+}
 
 
 

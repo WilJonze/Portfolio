@@ -5,29 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bb8d359ded.js" crossorigin="anonymous"></script>
     <title>Home</title>
 </head>
 <body>
 
     <div id="myNav" class="navbar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <button class="closebtn">&times;</button>
         <ul class="nav-content">
-            <li class="home"><a href="index.html">Home<i class="fa-sharp fa-solid fa-home"></i></a></li>
-            <li class="about"><a href="/html/about.html">About<i class="fa-sharp fa-solid fa-user"></i></a></li>
-            <li class="project"><a href="/html/projects.html">Projects<i class="fa-sharp fa-solid fa-diagram-project"></i></a></li>
+            <li class="home"><a href="index.html"><i class="fa-sharp fa-solid fa-home"></i>Home</a></li>
+            <li class="about"><a href="./html/about.html"><i class="fa-sharp fa-solid fa-user"></i>About</a></li>
+            <li class="project"><a href="./html/projects.html"><i class="fa-sharp fa-solid fa-diagram-project"></i>Projects</a></li>
         </ul>
     </div>
 
-    <span onclick="openNav()"><i class="fa-sharp fa-solid fa-bars" id="menu"></i></span>
+    <button class="nav-button"><i class="fa-sharp fa-solid fa-bars" id="menu"></i></button>
 
     
     <div class="mainbody">
         
-        <a>
-            <img src="/img/williamhead.jpeg" class="photo" alt="A picture of William">
-            <img src="/img/williamhardstyle.jpeg" class="photohover" alt="William with a Frog">
-        </a>
+        <div class="photo-postion">
+            <a>
+            <img src="img/williamhead.jpeg" class="photo" alt="A picture of William">
+            </a>
+        </div>
        
         <div class="info">
             <h1> William Berry </h1>
@@ -35,6 +37,7 @@
             <p>Up and coming Web Developer. Rider of the Mark. The best hire you'll ever make.</p>
 
             <button class="trigger">More About Me</button>
+        </div>
         
             <div class="modal">
                 <div class="modal-content">
@@ -51,8 +54,7 @@
                     </div>
                 </div>
 
-            </div>
-        </div>  
+            </div> 
        
     </div>
 </body>
