@@ -1,25 +1,3 @@
-/* Modal Button */
-
-/*
-var modal = document.getElementById("myModal");
-
-var button = document.getElementById("myButton");
-
-var span= document.getElementsByClassName("close") [0];
-
-button.onclick = function() {
-    modal.style.display ="block";
-}
-
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none;"
-    }
-}
 
 /* Menu Transition */
 
@@ -54,10 +32,11 @@ function windowOnClick(event) {
     }
 }
  
-trigger.addEventListener("click", toggleModal);
-closeButton.addEventListener("click", toggleModal);
-window.addEventListener("click", windowOnClick);
-
+window.onload=function(){
+    trigger.addEventListener("click", toggleModal);
+    closeButton.addEventListener("click", toggleModal);
+    window.addEventListener("click", windowOnClick);
+}
 
 /* Accordion Boxes */
 
@@ -65,8 +44,13 @@ var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-    acc[i].onclick = function(){
-        this.classList.toggle("active");
-        this.nextElementSibling.classList.toggle("show");
-  }
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
 }

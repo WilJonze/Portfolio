@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="https://kit.fontawesome.com/bb8d359ded.js" crossorigin="anonymous"></script>
+    
     <title>Home</title>
 </head>
 <body>
@@ -23,21 +23,37 @@
         <button class="nav-button"><i class="fa-sharp fa-solid fa-bars" id="menu"></i></button>
    
     <div class="about-section">
-        <h1>About</h1>
+        <h1 class="about-head">About</h1>
 
-        <h2>Contact Info</h2>
+        <h2 class="about-subhead">Contact Info</h2>
+
+        <button class="accordion">Name</button>
+<div class="panel">
+  <p>William Berry</p>
+</div>
+
+<button class="accordion">Email</button>
+<div class="panel">
+  <p>wberry264@gmail.com</p>
+</div>
+
+<button class="accordion">Phone</button>
+<div class="panel">
+  <p>502-724-0232</p>
+</div>
 
         <div class="social-icons">
             
-          <a href="https://www.linkedin.com/in/wberry264/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-          <a href="https://twitter.com/wberry264" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-          <a href="https://github.com/WilJonze" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+          <a href="https://www.linkedin.com/in/wberry264/" target="_blank"><i class="fa-brands fa-linkedin" id="social"></i></a></li>
+          <a href="https://twitter.com/wberry264" target="_blank"><i class="fa-brands fa-twitter" id="social"></i></a></li>
+          <a href="https://github.com/WilJonze" target="_blank"><i class="fa-brands fa-github" id="social"></i></a></li>
           
         </div>
     
+  <hr class="about-line">  
 
     <div class="skill-section">
-        <h2 class="skill-header">My Skills </h2>
+        <h2 class="about-subhead">My Skills </h2>
 
         <div class="skill-container">
           
@@ -59,4 +75,6 @@
 
 </body>
 </html>
-<script src="../js/javascript.js"></script>
+<script src="../js/javascript.js" defer></script>
+
+<script src="https://kit.fontawesome.com/bb8d359ded.js" crossorigin="anonymous"></script>

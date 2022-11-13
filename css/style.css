@@ -19,7 +19,6 @@ body {
 }
 
 
-
 .navbar{
   display: flex;
   justify-content: flex-end;
@@ -117,13 +116,24 @@ i {
 
 }
 
+.home-head{
+  font-size: 60px;
+  animation: fadeInHead 3s;
+}
+
+.home-info{
+  font-size: 30px;
+  animation: fadeInInfo 4s;
+  animation-delay: ;
+}
+
+
 .photo {
   width: 500px;
   height: auto;
   border-radius: 25%;
   border: 2px solid #192231;
   transition: 
-
 }
 
 .photo-position{
@@ -137,11 +147,12 @@ i {
   flex-direction: column;
   align-content: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 20px;
 }
 
 .trigger{
-  padding: 0.3em 1.2em
+  padding: 0.3em 1.2em;
   margin: 0 0.1em 0.1em 0;
   border: 0.16em solid rgba(255,255,255, 0);
   border-radius: 2em;
@@ -149,11 +160,12 @@ i {
   text-decoration: none;
   font-size: 16px;
   font-weight: 300px;
-  width: 150px;
+  width: 174px;
   height: 40px;
   color: #989898;
   background-color: #192231;
   transition: .3s;
+  animation: fadeInButton 4s;
 }
 
 .trigger:hover {
@@ -230,7 +242,7 @@ i {
 }
 
 .resumebutton{
-  padding: 0.3em 1.2em
+  padding: 0.3em 1.2em;
   margin: 0 0.1em 0.1em 0;
   border: 0.16em solid rgba(255,255,255, 0);
   border-radius: 2em;
@@ -262,6 +274,15 @@ i {
 
 /*About Page */
 
+.about-head{
+  font-size: 50px;
+}
+
+.about-subhead {
+  font-size: 32px;
+  margin-top: ;
+}
+
 .about-section{
   display: flex;
   flex-direction: column;
@@ -269,11 +290,62 @@ i {
   align-items: center;
 }
 
+.accordion {
+  background-color: #192231;
+  color:#98878f;
+  cursor: pointer;
+  padding: 18px;
+  width: 655px;
+  border: 2px solid black;
+  text-align: left;
+  outline: none;
+  font-size: 25px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #545670; 
+  color: black;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #985e6d;
+  overflow: hidden;
+  width: 615px;
+  border: 2px solid black;
+}
+
+.panel p {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
 .social-icons {
   display: flex;
   justify-content: center;
   gap: 75px;
-  font-size: 40px;
+  font-size: 50px;
+  padding: 25px;
+  margin-top: 30px;
+}
+
+#social {
+  text-decoration: none;
+  color: black;
+}
+
+#social:hover {
+  color: #985e6d;
+  transition: 0.4s;
+}
+
+.about-line {
+  border: 5px solid #192231;
+  width: 90%;
+  border-radius: 5px;
 }
 
 .skill-header{
@@ -301,7 +373,7 @@ i {
   display: flex;
   justify-content: center;
   gap: 80px;
-  margin-top: 100px;
+  margin-top: 20px;
   flex-direction: row;
 }
 
@@ -354,7 +426,7 @@ i {
   display: flex;
   justify-content: center;
 
-  padding: 0.3em 1.2em
+  padding: 0.3em 1.2em;
   margin: 0 0.1em 0.1em 0;
   border: 0.16em solid rgba(255,255,255, 0);
   border-radius: 2em;
@@ -381,6 +453,23 @@ i {
 
 
 /* Keyframes */
+
+@keyframes fadeInHead {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeInInfo {
+  0% {opacity: 0;}
+  60% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeInButton {
+  0% {opacity: 0;}
+  80% {opacity: 0;}
+  100% {opacity: 1;}
+}
 
 @keyframes animatetop {
   from {top: -300px; opacity: 0}
