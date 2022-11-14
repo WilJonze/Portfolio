@@ -10,40 +10,40 @@ To create a responsive Portfolio page that displays contact information, resume,
 
 ### Requirements of Completion:
 
-[] Project Plan
+- [x] Project Plan
    - Completed Project Plan Submission Form
 
-[] Project must be visually appealing
+- [x] Project must be visually appealing
    - While appeal is subjective, I believe the palette, font, general layout is pleasing to the eye. (It better be.. I spent WAY to much time picking out colors.)
 
-[] 2 media queries that create a better layout/user experience
+- [x] 2 media queries that create a better layout/user experience
    - Adding a media queries for mobile styling that vertically align content (see Home and Project Page) as well as sizing the navigation menu for different screen sizes.
 
-[] Project is uploaded to Github and has 5 separate commits
+- [x] Project is uploaded to Github and has 5 separate commits
    - While I did not commit every time I worked on the project. I have certainly achieved this requirement. 
 
-[] Includes a README file with explanations of the project
+- [x] Includes a README file with explanations of the project
    - I certainty hope I've completed this one. 
 
-[] Fully formed website with Header Footer and Body Sections
+- [x] Fully formed website with Header Footer and Body Sections
    - admittedly I did not have a header or footer section until reading the Project Requirements doc for the 10th time. You live and learn I suppose. 
 
-[] Best Effort at Semantic HTML
+- [x] Best Effort at Semantic HTML
    -VScode does make the easy with lines that pair elements. Upon committing the final version of the project I made sure to clean up any white space I deemed unnecessary.
 
-[] Project used either flexbox or grid for page layout
+- [x] Project used either flexbox or grid for page layout
    -Achieved primarily through flexbox. 
 
-[] Best effort to be accessible
+- [x] Best effort to be accessible
    -Using Lighthouse from the Chrome inspector, the page received a score of 86 in accessibility.  
 
-[] FEATURE 1: Create a custom animation that animates across the screen. 
+- [x] FEATURE 1: Create a custom animation that animates across the screen. 
    - Achieved by the full screen navigation menu that slide left to right over the course of 0.5s. 
 
-[] FEATURE 2: Create accordion boxes to display different types of information. 
+- [x] FEATURE 2: Create accordion boxes to display different types of information. 
    - Once navigating to the About Page, 3 accordion boxes give the user information on how to contact me. 
 
-[] FEATURE 3: Run PageSpeed Insights from google.com get a score of 80 or better.
+- [x] FEATURE 3: Run PageSpeed Insights from google.com get a score of 80 or better.
    - With the assumption that Lighthouse is an acceptable tool to measure performance, all pages received a score of 99 in performance.  
 
 
