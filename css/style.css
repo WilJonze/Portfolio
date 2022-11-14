@@ -1,9 +1,5 @@
 
-
-
-
 html {
-  /*background-image: url(/img/blurry-gradient-home1.png);*/
   min-height: 100%;
   font-family: 'Rubik', sans-serif;
   background-repeat: no-repeat;
@@ -14,10 +10,9 @@ html {
 
 body {
   background: linear-gradient(-45deg, #4f526d, #877b87, #746d7e, #545670);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite alternate;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite alternate;
 }
-
 
 .navbar{
   display: flex;
@@ -72,7 +67,6 @@ i {
 
 .navbar a:hover, .navbar a:focus {
   color: #985e6d;
- 
 }
 
 .navbar .closebtn {
@@ -88,7 +82,6 @@ i {
 }
 
 .closebtn:hover {
-  
   color: #985e6d;
 }
 
@@ -99,8 +92,6 @@ i {
   padding: 15px;
   margin: 15px;
   font-size: 36px;
-
-  
 }
 
 #menu:hover {
@@ -124,16 +115,15 @@ i {
 .home-info{
   font-size: 30px;
   animation: fadeInInfo 4s;
-  animation-delay: ;
 }
 
-
 .photo {
+  max-width: 100%;
   width: 500px;
   height: auto;
   border-radius: 25%;
   border: 2px solid #192231;
-  transition: 
+  
 }
 
 .photo-position{
@@ -172,8 +162,6 @@ i {
   background-color: #985e6d;
   color:#192231;
 }
-
-
 
 .modal{
  position: fixed;
@@ -388,7 +376,6 @@ i {
 }
 
 
-
 /* Projects */
 
 .title {
@@ -414,7 +401,8 @@ i {
 }
 
 .project-image{
-  max-width: 200px;
+  max-width: 100%;
+  width: 200px;
 }
 
 .text {
@@ -425,8 +413,6 @@ i {
 .view-code{
   display: flex;
   justify-content: center;
-
-  padding: 0.3em 1.2em;
   margin: 0 0.1em 0.1em 0;
   border: 0.16em solid rgba(255,255,255, 0);
   border-radius: 2em;
@@ -438,18 +424,24 @@ i {
   font-weight: 500px;
   width: 150px;
   height: 40px;
- 
   color: #989898;
   background-color: #192231;
   transition: .3s;
 }
 
 .view-code:hover{
-  background-color: #98878f;
+  background-color: #985e6d;
   color:#192231;
 }
 
 
+footer {
+  font-size: 10px;
+  color: #989898;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
 
 
 /* Keyframes */
@@ -490,7 +482,6 @@ i {
 }
 
 
-
 /* Media and @Media */
 
 @media screen and (max-height: 450px) {
@@ -499,5 +490,44 @@ i {
   font-size: 40px;
   top: 15px;
   right: 35px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  
+  html { 
+    overflow: auto;
+  }
+  
+  .mainbody{
+   display: flex;
+   flex-direction: column;
+  }
+
+  .info { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .accordion{
+    width: 500px;
+  }
+
+  .panel { 
+    width: 460px;
+  }
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    gap: 0px;
+  }
+
+  footer {
+    position: relative;
   }
 }
