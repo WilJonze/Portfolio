@@ -29,13 +29,13 @@ To create a responsive Portfolio page that displays contact information, resume,
    - admittedly I did not have a header or footer section until reading the Project Requirements doc for the 10th time. You live and learn I suppose. 
 
 - [x] Best Effort at Semantic HTML
-   -VScode does make the easy with lines that pair elements. Upon committing the final version of the project I made sure to clean up any white space I deemed unnecessary.
+   - VScode does make the easy with lines that pair elements. Upon committing the final version of the project I made sure to clean up any white space I deemed unnecessary.
 
 - [x] Project used either flexbox or grid for page layout
    -Achieved primarily through flexbox. 
 
 - [x] Best effort to be accessible
-   -Using Lighthouse from the Chrome inspector, the page received a score of 86 in accessibility.  
+   - Using Lighthouse from the Chrome inspector, the page received a score of 86 in accessibility.  
 
 - [x] FEATURE 1: Create a custom animation that animates across the screen. 
    - Achieved by the full screen navigation menu that slide left to right over the course of 0.5s. 
@@ -50,10 +50,10 @@ To create a responsive Portfolio page that displays contact information, resume,
 ### Features For Consideration:
 
 - Animated linear gradient background
-  -subtle as not to distract from the overall content, while providing variation to the background. 
+  - subtle as not to distract from the overall content, while providing variation to the background. 
 
 - Modal Box with downloadable resume
-  -clicking the 'More About Me' shows basic contact information as well as a resume that can be downloaded. 
+  - clicking the 'More About Me' shows basic contact information as well as a resume that can be downloaded. 
 
 - Fade in transitions
   - An attempt to add an eye catching element to the introduction to the page.  
