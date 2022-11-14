@@ -26,13 +26,13 @@ To create a responsive Portfolio page that displays contact information, resume,
    - I certainty hope I've completed this one. 
 
 - [x] Fully formed website with Header Footer and Body Sections
-   - admittedly I did not have a header or footer section until reading the Project Requirements doc for the 10th time. You live and learn I suppose. 
+   - Admittedly I did not have a header or footer section until reading the Project Requirements doc for the 10th time. You live and learn I suppose. 
 
 - [x] Best Effort at Semantic HTML
    - VScode does make the easy with lines that pair elements. Upon committing the final version of the project I made sure to clean up any white space I deemed unnecessary.
 
 - [x] Project used either flexbox or grid for page layout
-   -Achieved primarily through flexbox. 
+   - Achieved primarily through flexbox. 
 
 - [x] Best effort to be accessible
    - Using Lighthouse from the Chrome inspector, the page received a score of 86 in accessibility.  
